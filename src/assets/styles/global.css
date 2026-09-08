@@ -1,0 +1,83 @@
+/* 화이트 베이스 프리미엄 전역 스타일 */
+
+:root {
+    --luxe-bg: #ffffff;
+    --luxe-surface-variant: #f1f0ec;
+    --luxe-border: rgba(20, 20, 20, 0.1);
+    --luxe-text: #141414;
+    --luxe-text-muted: #6e6e6b;
+}
+
+html,
+body {
+    background-color: var(--luxe-bg);
+    font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: 0;
+    color: var(--luxe-text);
+}
+
+#app {
+    background-color: var(--luxe-bg);
+    min-height: 100vh;
+}
+
+.v-application {
+    font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.text-h1, .text-h2, .text-h3, .text-h4, .text-h5, .text-h6 {
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+    letter-spacing: 0.01em;
+}
+
+/* 카드 테두리를 얇고 은은하게 */
+.v-card.v-card--variant-flat.v-theme--luxeLight {
+    border-color: var(--luxe-border) !important;
+}
+
+/* 버튼 텍스트 자간 (프리미엄 느낌의 절제된 자간) */
+.v-btn {
+    letter-spacing: 0.03em;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--luxe-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d8d6d0;
+    border-radius: 8px;
+    border: 2px solid var(--luxe-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c3c1ba;
+}
+
+/* 선택 영역 */
+::selection {
+    background: #141414;
+    color: #ffffff;
+}
+
+.content-container {
+    min-height: 40vh;
+}
+
+.hairline-divider {
+    border-top: 1px solid var(--luxe-border);
+}
+
+.section-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--luxe-text-muted);
+    text-transform: uppercase;
+}
