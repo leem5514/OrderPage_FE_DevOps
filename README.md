@@ -2,7 +2,9 @@
 
 Vue 기반 주문 페이지 프론트엔드입니다.
 
-프론트엔드 배포는 S3 + CloudFront 대신 Vercel을 사용합니다. 이 프로젝트의 핵심 DevOps 실험은 EKS, Jenkins, Terraform, RDS, Redis, RabbitMQ, Prometheus/Grafana 기반 백엔드 운영에 두고, 프론트엔드는 Vercel의 Git 연동 배포와 Preview Deployment를 활용해 빠르게 검증합니다.
+2026-11-06 새 기준의 변경·검증은 [배포 점검 기록](docs/deployment-readiness.md)을 참고하세요.
+
+프론트엔드는 Vercel을 사용합니다. 새 계획은 Jenkins 검증 후 Vercel CLI 배포이며, 운영 Git 자동 배포와 중복 실행하지 않도록 다음 CI 단계에서 설정합니다. 핵심 비교 실험은 EKS의 배포와 운영 관측입니다.
 
 ## Tech Stack
 
