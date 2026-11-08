@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+/.vercel/
+/.local/
 
 
 # local env files
