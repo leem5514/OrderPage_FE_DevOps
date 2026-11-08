@@ -5,8 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve --port 8081",
     "build": "vue-cli-service build",
+    "build:production": "node scripts/check-production-env.cjs && vue-cli-service build",
+    "package:vercel": "node scripts/package-vercel.cjs",
     "lint": "vue-cli-service lint",
-    "test": "node --test tests/auth-interceptors.test.js"
+    "test": "node --test tests/auth-interceptors.test.js tests/vercel-output.test.cjs"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
