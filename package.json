@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --port 8081",
+    "serve": "vue-cli-service serve --host 127.0.0.1 --port 8081",
     "build": "vue-cli-service build",
     "build:production": "node scripts/check-production-env.cjs && vue-cli-service build",
     "package:vercel": "node scripts/package-vercel.cjs",
